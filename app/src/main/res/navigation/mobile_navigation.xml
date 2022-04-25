@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.agrocare.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_detection"
+        android:name="com.example.agrocare.ui.detection.DiseaseDetectionFragment"
+        android:label="Disease Detection"
+        tools:layout="@layout/fragment_disease_detection" />
+
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="com.example.agrocare.ui.WeatherFragment"
+        android:label="Weather Monitor"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/nav_area_calculation"
+        android:name="com.example.agrocare.ui.area.MapsFragment"
+        android:label="@string/menu_area"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.agrocare.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.agrocare.ui.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+
+</navigation>

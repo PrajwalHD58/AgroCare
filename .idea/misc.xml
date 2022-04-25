@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/ic_baseline_minimize_24.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/login_bg.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/login_illus.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/marker_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/otp_illus.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable-v24/profile_bg.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/bg_button.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_01d.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_01n.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_02d.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_02n.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_03d.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_03n.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/ic_plant.xml" value="0.16296296296296298" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/drawable/marker_rounded.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/font/lato.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_home_detail.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_screen1.xml" value="0.16" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_screen2.xml" value="0.25" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_screen3.xml" value="0.25" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_user_login.xml" value="0.25" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/activity_user_signup.xml" value="0.2" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/app_bar_main.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/custom_info_window.xml" value="0.22" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/featured_plants_item.xml" value="0.22" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_disease_detection.xml" value="0.25" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_gallery.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_help.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_home.xml" value="0.140625" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_maps.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_slideshow.xml" value="0.22" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/fragment_weather.xml" value="0.33" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/group_item.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/nav_header_main.xml" value="0.33" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/plant_disease_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/recommended_item.xml" value="0.22" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/layout/slide_images_detail_product.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/menu/main.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/menu/menu_edit_profile.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/menu/menu_navigation_drawer.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Prajwal/Androd_Projects/AgroCare/app/src/main/res/menu/navigation.xml" value="0.19635416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
