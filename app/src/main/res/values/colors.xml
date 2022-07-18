@@ -5,14 +5,25 @@
     <color name="purple_700">#0c9869</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_smoke">#F5F5F5</color>
     <color name="white_ghost">#f9f8fd</color>
     <color name="teal">#0c9869</color>
     <color name="green_pale">#a7eab7</color>
     <color name="black_soft">#740C0C0C</color>
+
     <color name="light_red">#FF7362</color>
+
+    <color name="col1">#FFBB86FC</color>
+    <color name="col2">#FF3355</color>
+    <color name="col3">#E60000</color>
+    <color name="col4">#CC0066</color>
+    <color name="col5">#009999</color>
+    <color name="col6">#00AAFF</color>
+    <color name="col7">#D400FF</color>
+    <color name="col8">#00CCCC</color>
+
+    <color name="black">#FF000000</color>
     <color name="gray">#808080</color>
     <color name="light_gray">#DBEEE8</color>
     <color name="light_gray2">#D3D3D3</color>
@@ -23,4 +34,8 @@
     <color name="foregroundMarker">#212121</color>
     <color name="markerNosubtitle">#757575</color>
     <color name="backgroundMarker">#FFFFFF</color>
+    <color name="blue">#0080ff</color>
+    <color name="yellow">#ffef00</color>
+    <color name="testcolor">#00ffff</color>
+    <color name="colorAlpha">#00000000</color>
 </resources>

@@ -38,40 +38,22 @@ public class screen1 extends AppCompatActivity {
             finish();
         }
 
-        EasySplashScreen config = new EasySplashScreen(screen1.this)
-                .withFullScreen()
-                .withTargetActivity(userLogin.class)
-                .withSplashTimeOut(3000)
-                .withBackgroundResource(android.R.color.white)
-                .withHeaderText("AgroCare")
-                .withFooterText("Developed By- Prajwal")
-                .withBeforeLogoText("AgroCare")
-                .withLogo(R.drawable.ic_plant)
-                .withAfterLogoText("For Smart Monitoring of Agriculture!");
+        Button btn=findViewById(R.id.next);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),userLogin.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-
-        //set your own animations
-        myCustomTextViewAnimation(config.getFooterTextView());
-
-        //customize all TextViews
-
-        config.getHeaderTextView().setTextColor(Color.WHITE);
-        config.getFooterTextView().setTextColor(Color.WHITE);
-
-        //create the view
-        View easySplashScreenView = config.create();
-
-        setContentView(easySplashScreenView);
 
 
 
     }
 
-    private void myCustomTextViewAnimation(TextView tv){
-        Animation animation=new TranslateAnimation(0,0,480,0);
-        animation.setDuration(1200);
-        tv.startAnimation(animation);
-    }
+
 
     private Boolean loadData() {
         SharedPreferences sharedPreferences = getSharedPreferences(PREF, MODE_PRIVATE);

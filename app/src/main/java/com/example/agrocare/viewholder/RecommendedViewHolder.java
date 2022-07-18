@@ -22,6 +22,5 @@ public class RecommendedViewHolder extends RecyclerView.ViewHolder {
         recommended_parent  = itemView.findViewById(R.id.item_recommended_parent);
         recommended_title   = itemView.findViewById(R.id.item_recommended_title);
         recommended_price   = itemView.findViewById(R.id.item_recommended_price);
-        recommended_country = itemView.findViewById(R.id.item_recommended_country);
     }
 }

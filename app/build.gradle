@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.agrocare"
-        minSdk 21
+        minSdk 24
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -37,7 +37,10 @@ android {
     buildToolsVersion '30.0.3'
     ndkVersion '21.4.7075529'
 }
-
+configurations {
+    cleanedAnnotations
+    implementation.exclude group: 'org.jetbrains' , module:'annotations'
+}
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -54,6 +57,9 @@ dependencies {
     //Current LOcation
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.room:room-runtime:2.4.2'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
+    implementation 'androidx.room:room-rxjava2:2.4.2'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

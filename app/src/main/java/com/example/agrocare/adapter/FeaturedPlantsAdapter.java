@@ -42,7 +42,7 @@ public class FeaturedPlantsAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         setOnClick(((FeaturedPlantsViewHolder) holder).featured_plants_parent);
         setTitle(((FeaturedPlantsViewHolder) holder).featured_plants_title, plants.get(position).getPlantTitle());
         setCountry(((FeaturedPlantsViewHolder) holder).featured_plants_country, plants.get(position).getPlantCountry());
-        setPrice(((FeaturedPlantsViewHolder) holder).featured_plants_price, plants.get(position).getPlantPrice());
+        setGrowth(((FeaturedPlantsViewHolder) holder).featured_plants_price, plants.get(position).getPlantGrowth());
     }
 
     private void setImage(final ImageView imageView, int image) {
@@ -72,7 +72,7 @@ public class FeaturedPlantsAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         textView.setText(plantCountry);
     }
 
-    private void setPrice(TextView textView, String plantPrice) {
+    private void setGrowth(TextView textView, String plantPrice) {
         textView.setText(plantPrice);
     }
 

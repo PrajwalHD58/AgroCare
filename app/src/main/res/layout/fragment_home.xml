@@ -1,70 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white_smoke">
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="@drawable/half_rounded" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/your_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
-            android:fontFamily="@font/nunito_bold"
-            android:text="Hi Achmad!"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/half_rounded" />
 
-        <View
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/your_name"
-            android:layout_marginStart="15dp"
-            android:layout_width="30dp"
-            android:layout_height="5dp"
-            android:background="@drawable/bg_search"/>
+            <TextView
+                android:id="@+id/your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Hi Achmad!"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageView"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="15dp"
-            android:elevation="3dp"
-            android:src="@drawable/ic_avatar"
-            app:civ_border_color="@android:color/white"
-            app:civ_border_width="3dp" />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/your_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_search" />
 
-        <LinearLayout
-            android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="20dp"
-            android:elevation="50dp"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="3dp"
+                android:src="@drawable/ic_avatar"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="3dp" />
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_below="@id/search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
+            </LinearLayout>
 
-</FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rec1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search">
+
+                <RelativeLayout
+                    android:id="@+id/head_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/group_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toStartOf="@+id/add_crop"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunito_bold"
+                        android:lines="1"
+                        android:text="Your Crops"
+                        android:textColor="@color/dark_late_gray"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/group_title"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_green_line" />
+
+                    <Button
+                        android:id="@+id/add_crop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxLength="15"
+                        android:text="ADD CROP"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/group_recycler_view_crops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/head_parent"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rec1">
+
+                <RelativeLayout
+                    android:id="@+id/head_rparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/group_rtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toStartOf="@+id/view_rall"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunito_bold"
+                        android:lines="1"
+                        android:text="Recommended Crops"
+                        android:textColor="@color/dark_late_gray"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/group_rtitle"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_green_line" />
+
+                    <Button
+                        android:id="@+id/view_rall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxLength="15"
+                        android:text="More CROPS"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/group_recycler_view_rcrops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/head_rparent"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/featured_plants_item" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</ScrollView>

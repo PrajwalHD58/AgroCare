@@ -13,18 +13,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.agrocare.R;
+import com.example.agrocare.model.Crop;
 import com.example.agrocare.model.Plant;
 import com.example.agrocare.ui.home.HomeDetailActivity;
+import com.example.agrocare.ui.home.IndividualPlant;
 import com.example.agrocare.viewholder.RecommendedViewHolder;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class RecommendedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context context;
-    private final ArrayList<Plant> plants;
+    private final List<Crop> plants;
 
-    public RecommendedAdapter(Context context, ArrayList<Plant> plants) {
+    public RecommendedAdapter(Context context, List<Crop> plants) {
         this.context = context;
         this.plants = plants;
     }
@@ -38,11 +41,10 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        setImage(((RecommendedViewHolder) holder).recommended_picture, plants.get(position).getPlantPicture());
-        setTitle(((RecommendedViewHolder) holder).recommended_title, plants.get(position).getPlantTitle());
-        setCountry(((RecommendedViewHolder) holder).recommended_country, plants.get(position).getPlantCountry());
-        setPrice(((RecommendedViewHolder) holder).recommended_price, plants.get(position).getPlantPrice());
-        setOnClick(((RecommendedViewHolder) holder).recommended_parent);
+        setImage(((RecommendedViewHolder) holder).recommended_picture,R.drawable.image_1 );
+        setTitle(((RecommendedViewHolder) holder).recommended_title, plants.get(position).getPlantName());
+        setPrice(((RecommendedViewHolder) holder).recommended_price, String.valueOf(plants.get(position).getDaysFromStart()));
+        setOnClick(((RecommendedViewHolder) holder).recommended_parent,position);
     }
 
     private void setImage(final ImageView imageView, int image) {
@@ -71,15 +73,38 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     }
 
     private void setPrice(TextView textView, String plantPrice) {
-        textView.setText(plantPrice);
+        textView.setText(plantPrice+" days.");
     }
 
-    private void setOnClick(RelativeLayout button) {
-        button.setOnClickListener(view -> context.startActivity(new Intent(context, HomeDetailActivity.class)));
+    private void setOnClick(RelativeLayout button,int position) {
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(context, IndividualPlant.class);
+                i.putExtra("Curr_Crop", plants.get(position));
+                context.startActivity(i);
+
+            }
+        });
+
     }
 
     @Override
     public int getItemCount() {
         return plants.size();
     }
+
+    public void dataChange()
+    {
+        notifyDataSetChanged();
+    }
+
+    public void updateCropList(List<Crop> newlist) {
+        plants.clear();
+        plants.addAll(newlist);
+        this.notifyDataSetChanged();
+    }
+
 }

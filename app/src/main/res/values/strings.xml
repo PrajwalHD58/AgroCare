@@ -30,4 +30,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="grow_week">Grow Weeks:</string>
+    <string name="grow_day">Days:</string>
+    <string name="grow_phase">Current Phase:</string>
+    <string name="phase_week">Phase Weeks:</string>
+    <string name="phase_day">Phase Days:</string>
+
+    <string name="placeholder_parent_name">White Dwarf #3 G2</string>
+    <string name="placeholder_days_since_start">0</string>
+    <string name="placeholder_state_name">Flowering</string>
+    <string name="parent_plant">Parent Plant:</string>
+    <string name="plant_source">Crop Source:</string>
+
+    <string name="plant_origin_seed">Seed</string>
+    <string name="plant_origin_clone">Clone</string>
+
 </resources>
