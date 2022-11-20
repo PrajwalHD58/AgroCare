@@ -25,11 +25,8 @@ public class Crop implements Serializable {
 
     public boolean isFromSeed;
 
-//    @Ignore
-//    public ArrayList<GenericRecord> genericRecords;
 
     public Crop() {
-//        genericRecords = new ArrayList<>();
 
     }
 
